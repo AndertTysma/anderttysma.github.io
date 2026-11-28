@@ -2,7 +2,7 @@
    content column starting ~38% across. */
 
 :root {
-  --panna: #dfdcd2;              /* panna white, 10% darker than #f8f4e9 */
+  --panna: #ffffff;              /* panna white, 10% darker than #f8f4e9 */
   --ink: rgba(20, 18, 14, 0.82);
   --ink-strong: rgba(20, 18, 14, 0.92);
   --ink-dim: rgba(20, 18, 14, 0.42);
