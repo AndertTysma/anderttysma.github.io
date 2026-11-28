@@ -95,13 +95,17 @@ ul { list-style: none; }
 /* Home: top of the menu lines up with the top of the logo
    (the logo drawing starts ~5% below the top of its box) */
 .side--home { padding-top: calc(1.75rem + min(32px, 3.8vh)); }
-.home-name { margin-top: 2.6rem; line-height: 0; font-size: 1rem; font-weight: 400; }
-.home-name img {
-  display: block;
-  /* lettering from the logotype, ~7% wider than the logo above it */
-  width: min(385px, 45.7vh);
-  max-width: 85vw;
-  height: auto;
+.home-name {
+  margin-top: 2.6rem;
+  /* sharp live text in Lora, matching the logotype; ~7% wider than the logo */
+  font-family: "Lora", Georgia, serif;
+  font-weight: 400;
+  font-size: min(50px, 5.93vh);
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-strong);
+  text-align: center;
 }
 
 /* ---------- ENTRIES ---------- */
@@ -187,5 +191,5 @@ figure.entry { margin-bottom: 2rem; }
   .home-hero .home-logo { width: 315px; max-width: 80vw; }
   .home-hero .home-logo svg { max-height: 60vh; }
   .home-name { margin-top: 1.8rem; }
-  .home-name img { width: min(337px, 38vh); }
+  .home-name { font-size: min(43px, 4.93vh, 9.5vw); }
 }
